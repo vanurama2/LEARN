@@ -1,0 +1,8 @@
+# Create a Resource Group
+
+az group create --name 'test2' --location 'eastus'
+
+az vm create --name 'win2' --resource-group 'test2' --location 'eastus' --image 'win2016Datacenter' --size 'standard_B1s' --admin-username 'rvrwin' --admin-password 'Ammaazure@123'
+az vm delete --name 'azl' --resourcey-group 'test'
+az vm create --name 'azl2' --resource-group 'test2' --location 'eastus' --image 'ubuntults' --size 'standard_B1s' --admin-username 'rvrl' --authentication-type 'password' --admin-password 'motherindia@123'
+az group list --resource-group
